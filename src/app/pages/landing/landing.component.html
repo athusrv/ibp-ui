@@ -1,0 +1,57 @@
+<div class="landing-page">
+  <section class="home">
+    <div class="social-media">
+      <app-social-media-buttons></app-social-media-buttons>
+    </div>
+    <div class="landing-page-header">
+      <img src="../../../assets/images/ibp.png" height="48" width="auto" alt="as">
+      <app-menu-item [active]="true" label="Igreja"></app-menu-item>
+      <app-menu-item label="Eventos"></app-menu-item>
+      <app-menu-item label="Fotos"></app-menu-item>
+      <app-menu-item label="Departamentos"></app-menu-item>
+      <app-menu-item label="Contribua"></app-menu-item>
+      <app-menu-item label="Contato"></app-menu-item>
+    </div>
+    <div class="main-content">
+      <h1 class="welcome-text">Seja bem-vindo</h1>
+      <p class="subtitle">Uma igreja para toda família</p>
+    </div>
+  </section>
+  <section class="ibp">
+    <div class="main-content">
+      <h1 class="welcome-text">A Igreja Batista da Pituba</h1>
+      <div class="mvv">
+        <div class="item" *ngFor="let item of mvv">
+          <div class="icon">
+            <img [src]="item.icon" alt="">
+          </div>
+          <p class="title">{{item.title}}</p>
+          <p class="text">{{item.content}}</p>
+        </div>
+      </div>
+      <div class="our-leaders">
+        <p class="title">Nossos pastores</p>
+        <div class="leaders">
+          <div class="leader" *ngFor="let leader of leaders">
+            <div class="picture"></div>
+            <div class="name-role">
+              <p class="name">{{leader.name}}</p>
+              <p class="role">{{leader.role}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="footer">
+    <div class="address">
+      Alameda dos Flamboyants, 1
+      <br>
+      Pituba
+      <br>
+      Salvador, BA, 41820-410
+    </div>
+    <img src="assets/images/cbb.png" alt="">
+    <app-social-media-buttons direction="horizontal"></app-social-media-buttons>
+  </section>
+</div>

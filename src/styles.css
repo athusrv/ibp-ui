@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'fonts/sora/font.css';
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-size: 100%;
+  list-style-type: none;
+  font-family: Sora, sans-serif;
+}
