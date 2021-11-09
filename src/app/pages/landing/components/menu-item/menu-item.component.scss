@@ -21,11 +21,10 @@
       cursor: pointer;
       position: relative;
 
-      a {
+      div {
         padding: 4px 8px;
         position: relative;
         text-transform: uppercase;
-        letter-spacing: 5px;
 
         &:visited {
           color: black;
