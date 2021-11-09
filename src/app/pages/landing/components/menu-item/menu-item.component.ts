@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {MenuItem} from "./models/menu-item";
 
 @Component({
   selector: 'app-menu-item',
@@ -11,7 +12,7 @@ export class MenuItemComponent implements OnInit {
   active: boolean = false;
 
   @Input()
-  label: string = '';
+  data?: MenuItem
 
   constructor() {
   }

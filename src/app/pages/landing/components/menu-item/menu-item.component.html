@@ -1,3 +1,14 @@
 <div class="menu-item-wrapper">
-  <p [class.active]="active">{{label}}</p>
+  <div class="nav">
+    <ul class="nav__list">
+      <li class="nav__menu">
+        <a href="/">{{data?.label}}</a>
+        <ul class="nav__menu-lists nav__menu--1-lists">
+          <li class="nav__menu-items" *ngFor="let child of data?.children"><a href="" (click)="child?.onEvent?.onClick(child)">{{child.label}}</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
 </div>
+
+
