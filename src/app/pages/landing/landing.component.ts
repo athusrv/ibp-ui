@@ -10,12 +10,12 @@ import {MenuItemEvent} from "./components/menu-item/models/menu-item-event";
 export class LandingComponent implements OnInit, MenuItemEvent {
   menus: MenuItem[] = [
     new MenuItem('Igreja', this, [
-      new MenuItem('Nossa Visão', this),
-      new MenuItem('Pastores', this),
+      new MenuItem('A IBP', this),
+      new MenuItem('Ministérios', this),
+      new MenuItem('Cultos', this),
+      new MenuItem('PGMs', this),
     ]),
     new MenuItem('Eventos'),
-    new MenuItem('Fotos'),
-    new MenuItem('Departamentos'),
     new MenuItem('Contribua'),
     new MenuItem('Contato'),
   ]
@@ -61,6 +61,14 @@ export class LandingComponent implements OnInit, MenuItemEvent {
   }
 
   onClick(item: MenuItem) {
-    console.log(this.menus.find(i => i === item))
+    console.log(this.findMenuItem(item))
+  }
+
+  findMenuItem(item: MenuItem, source: MenuItem[] = this.menus): MenuItem | undefined {
+    return source.find(i => {
+      if (i === item) return i
+      else if(i.children.length > 0) return this.findMenuItem(item, i.children)
+      return null
+    })
   }
 }

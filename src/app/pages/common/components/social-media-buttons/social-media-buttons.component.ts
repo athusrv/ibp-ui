@@ -8,6 +8,8 @@ import {Component, Input, OnInit} from '@angular/core';
 export class SocialMediaButtonsComponent implements OnInit {
   @Input()
   direction: 'horizontal' | 'vertical' = 'vertical';
+  @Input()
+  animatable: boolean = true
 
   constructor() {
   }

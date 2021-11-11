@@ -33,14 +33,17 @@
 
       .nav__menu-lists {
         position: absolute;
-        height: 100%;
-        width: 100%;
+        height: max-content;
+        width: max-content;
+        background: whitesmoke;
+        border-radius: 0 4px 4px 4px;
 
         li {
           display: none;
           position: relative;
           padding: .25rem 0;
           white-space: nowrap;
+          text-align: left;
 
           &:first-child {
             padding-top: 1rem;
@@ -48,8 +51,25 @@
         }
       }
 
-      &:hover > .nav__menu-lists li {
-        display: block;
+      &:hover {
+        background: whitesmoke;
+        border-radius: 4px 4px 0 0;
+
+        &:after {
+          opacity: 1;
+          content: ' ';
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          height: 2px;
+          background: #1E3C72;
+          width: 100%;
+        }
+
+        > .nav__menu-lists li {
+          display: block;
+          color: black;
+        }
       }
 
       // Menu 1

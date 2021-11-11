@@ -1,6 +1,6 @@
 <div class="social-media-buttons-wrapper" [ngStyle]="{'flex-flow': direction === 'horizontal' ? 'row' : 'column'}">
-  <img src="../../../../../assets/icons/Youtube.svg" alt="">
-  <img src="../../../../../assets/icons/Instagram.svg" alt="">
-  <img src="../../../../../assets/icons/Facebook.svg" alt="">
-  <img src="../../../../../assets/icons/Mobile-phone.svg" alt="">
+  <img [class.animatable]="animatable" [class]="direction" src="../../../../../assets/icons/Youtube.svg" alt="">
+  <img [class.animatable]="animatable" [class]="direction" src="../../../../../assets/icons/Instagram.svg" alt="">
+  <img [class.animatable]="animatable" [class]="direction" src="../../../../../assets/icons/Facebook.svg" alt="">
+  <img [class.animatable]="animatable" [class]="direction" src="../../../../../assets/icons/Mobile-phone.svg" alt="">
 </div>
