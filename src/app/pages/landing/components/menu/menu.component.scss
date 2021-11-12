@@ -1,5 +1,5 @@
-.menu-item-wrapper {
-  $animSpeed: 50ms;
+.menu-wrapper {
+  $animSpeed: 80ms;
 
   ul {
     list-style-type: none;
@@ -10,19 +10,44 @@
     text-align: center;
     width: 100%;
 
-    &__list {
+    &-list {
       display: inline-block;
-
     }
 
-    &__menu {
+    &-menu {
       float: left;
       text-transform: uppercase;
       cursor: pointer;
       position: relative;
 
+      &:after {
+        content: ' ';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        background: #1E3C72;
+        width: 0;
+        transition: all 0.1s ease-in-out;
+      }
+
+      &:hover {
+        //background: whitesmoke;
+        border-radius: 4px 4px 0 0;
+
+        &:after {
+          width: 100%;
+          transition: all 0.1s ease-in-out;
+        }
+
+        > .submenus li {
+          display: block;
+          color: black;
+        }
+      }
+
       div {
-        padding: 4px 8px;
+        padding: .5rem .8rem;
         position: relative;
         text-transform: uppercase;
 
@@ -31,17 +56,18 @@
         }
       }
 
-      .nav__menu-lists {
+      .submenus {
         position: absolute;
         height: max-content;
         width: max-content;
         background: whitesmoke;
+        z-index: 2;
         border-radius: 0 4px 4px 4px;
 
         li {
           display: none;
           position: relative;
-          padding: .25rem 0;
+          padding: .5rem .8rem;
           white-space: nowrap;
           text-align: left;
 
@@ -51,35 +77,13 @@
         }
       }
 
-      &:hover {
-        background: whitesmoke;
-        border-radius: 4px 4px 0 0;
-
-        &:after {
-          opacity: 1;
-          content: ' ';
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          height: 2px;
-          background: #1E3C72;
-          width: 100%;
-        }
-
-        > .nav__menu-lists li {
-          display: block;
-          color: black;
-        }
-      }
-
-      // Menu 1
       @for $i from 1 through 5 {
-        &:hover > .nav__menu--1-lists li:nth-child(#{$i}) {
+        &:hover > .submenus li:nth-child(#{$i}) {
           opacity: 0;
-          animation: menu1 ease-in-out forwards;
+          animation: menuAnim ease-in-out forwards;
           animation-duration: $animSpeed;
           animation-delay: ($animSpeed / 2) * ($i - 1);
-          @keyframes menu1 {
+          @keyframes menuAnim {
             from {
               opacity: 0;
               transform: translateY(-1rem);

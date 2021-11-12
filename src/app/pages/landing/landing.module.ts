@@ -2,8 +2,9 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {LandingComponent} from './landing.component';
 import {RouterModule} from "@angular/router";
-import {MenuItemModule} from "./components/menu-item/menu-item.module";
-import {SocialMediaButtonsModule} from "../common/components/social-media-buttons/social-media-buttons.module";
+import {HomeModule} from "./components/home/home.module";
+import {AboutModule} from "./components/about/about.module";
+import {FooterModule} from "./components/footer/footer.module";
 
 
 @NgModule({
@@ -18,8 +19,9 @@ import {SocialMediaButtonsModule} from "../common/components/social-media-button
         component: LandingComponent
       }
     ]),
-    MenuItemModule,
-    SocialMediaButtonsModule
+    HomeModule,
+    AboutModule,
+    FooterModule,
   ]
 })
 export class LandingModule {

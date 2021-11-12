@@ -1,0 +1,64 @@
+.home {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  height: 90%;
+  position: relative;
+
+  .social-media {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 6rem;
+  }
+
+  .landing-page-header {
+    width: 100%;
+    padding: 32px 96px 16px 96px;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+  }
+
+  .main-content {
+    padding-top: 6rem;
+    display: flex;
+    flex-flow: column;
+    flex: 1 1 auto;
+    align-items: center;
+    gap: .5rem;
+
+    h1.welcome-text {
+      font-size: 3rem;
+    }
+
+    .subtitle {
+      position: relative;
+      font-weight: 600;
+      font-size: 1rem;
+      text-align: center;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: #505050;
+
+      &:before, &:after {
+        position: absolute;
+        content: ' ';
+        width: 7.5rem;
+        height: 1px;
+        background: black;
+        top: 50%;
+        background: linear-gradient(270deg, #4B77CB 0%, #27529F 100%);
+        border-radius: 1px;
+      }
+
+      &:before {
+        transform: translate(calc(-7.5rem - 16px), -50%);
+      }
+
+      &:after {
+        transform: translate(calc(1rem - 5px), -50%);
+      }
+    }
+  }
+}

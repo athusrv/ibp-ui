@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MenuItemComponent } from './menu-item.component';
+import { MenuLinkDirective } from './menu-link.directive';
 
 
 
 @NgModule({
     declarations: [
-        MenuItemComponent
+        MenuLinkDirective
     ],
     exports: [
-        MenuItemComponent
+        MenuLinkDirective
     ],
     imports: [
         CommonModule
     ]
 })
-export class MenuItemModule { }
+export class MenuLinkModule { }

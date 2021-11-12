@@ -2,7 +2,7 @@ import {MenuItemEvent} from "./menu-item-event";
 import {v4 as uuid} from 'uuid'
 
 export class MenuItem {
-  id = uuid()
+  private id = uuid()
   label: string
   onEvent: MenuItemEvent | null
   children: MenuItem[]

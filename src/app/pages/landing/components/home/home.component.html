@@ -1,0 +1,17 @@
+<section class="home">
+  <div class="social-media">
+    <app-social-media-buttons></app-social-media-buttons>
+  </div>
+  <navbar>
+    <menu menuLink="" *ngFor="let menu of menus">
+      {{menu.label}}
+      <ul *ngIf="menu.children.length > 0" submenu>
+        <li *ngFor="let submenu of menu.children">{{submenu.label}}</li>
+      </ul>
+    </menu>
+  </navbar>
+  <div class="main-content">
+    <h1 class="welcome-text">Seja bem-vindo</h1>
+    <p class="subtitle">Uma igreja para toda família</p>
+  </div>
+</section>

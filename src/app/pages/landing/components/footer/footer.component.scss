@@ -1,0 +1,11 @@
+.footer {
+  background: #F5F5F5;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem 0 5rem 0;
+
+  .address {
+    font-weight: 300;
+  }
+}
