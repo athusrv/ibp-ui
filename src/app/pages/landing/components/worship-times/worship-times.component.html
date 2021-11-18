@@ -1,0 +1,30 @@
+<div class="worship-times-wrapper">
+  <div class="presentation">
+    <p class="top-title">Nossos cultos</p>
+    <h1 class="header">Venha cultuar conosco</h1>
+    <div class="actions">
+      <button tuiButton>Agendar</button>
+      <div class="covid-notice" [tuiHint]="covidNoticeTooltip" [tuiHintShowDelay]="0" tuiHintMode="onDark"
+           tuiHintDirection="top-right">
+        <tui-svg class="icon" src="tuiIconCancel"></tui-svg>
+        <p>COVID-19</p>
+      </div>
+
+      <ng-template #covidNoticeTooltip>
+        <div>Para a sua proteção e também de outras pessoas, pedimos que se atente às recomendações sanitárias enquanto estiver participando de nossos cultos presenciais:</div>
+        <br>
+        <div>&bull; Manter o distanciamento social entre pessoas que não estão no mesmo convívio</div>
+        <div>&bull; Usar  máscara durante todo o culto</div>
+        <div>&bull; Higienizar com frequência as mãos</div>
+        <div>&bull; Evitar aglomerações na entrada e saída do templo</div>
+      </ng-template>
+    </div>
+  </div>
+  <div class="right-content">
+    <worship-time-section *ngFor="let time of worshipTimes; let i = index"
+                          [decoration]="decorations[i]"
+                          [icon]=icons[i]
+                          [worshipTime]="time"
+    ></worship-time-section>
+  </div>
+</div>

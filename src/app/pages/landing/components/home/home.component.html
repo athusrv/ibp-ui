@@ -4,7 +4,7 @@
   </div>
   <navbar>
     <menu menuLink="" *ngFor="let menu of menus">
-      {{menu.label}}
+      <p>{{menu.label}}</p>
       <ul *ngIf="menu.children.length > 0" submenu>
         <li *ngFor="let submenu of menu.children">{{submenu.label}}</li>
       </ul>

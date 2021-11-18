@@ -5,6 +5,7 @@ import {RouterModule} from "@angular/router";
 import {HomeModule} from "./components/home/home.module";
 import {AboutModule} from "./components/about/about.module";
 import {FooterModule} from "./components/footer/footer.module";
+import {WorshipTimesModule} from "./components/worship-times/worship-times.module";
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import {FooterModule} from "./components/footer/footer.module";
     HomeModule,
     AboutModule,
     FooterModule,
+    WorshipTimesModule
   ]
 })
 export class LandingModule {
