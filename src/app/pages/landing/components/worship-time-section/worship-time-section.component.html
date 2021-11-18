@@ -1,6 +1,8 @@
 <div class="worship-time-section-wrapper">
   <div class="header">
-    <tui-marker-icon #iconElem  class="icon" size="s" [src]="icon"></tui-marker-icon>
+    <div class="icon" #iconElem>
+      <fa-icon [icon]="worshipTime?.icon!"></fa-icon>
+    </div>
     <div class="title">
       <h1>{{worshipTime?.title}}</h1>
       <p>{{worshipTime?.subtitle}}</p>

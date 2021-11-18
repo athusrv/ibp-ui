@@ -17,7 +17,7 @@ import {AppRoutingModule} from './app-routing.module';
     TuiRootModule,
     BrowserAnimationsModule,
     TuiDialogModule,
-    TuiNotificationsModule
+    TuiNotificationsModule,
   ],
   providers: [{provide: TUI_SANITIZER, useClass: NgDompurifySanitizer}],
   bootstrap: [AppComponent]

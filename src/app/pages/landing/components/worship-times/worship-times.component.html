@@ -11,20 +11,18 @@
       </div>
 
       <ng-template #covidNoticeTooltip>
-        <div>Para a sua proteção e também de outras pessoas, pedimos que se atente às recomendações sanitárias enquanto estiver participando de nossos cultos presenciais:</div>
+        <div>Para a sua proteção e também de outras pessoas, pedimos que se atente às recomendações sanitárias enquanto
+          estiver participando de nossos cultos presenciais:
+        </div>
         <br>
         <div>&bull; Manter o distanciamento social entre pessoas que não estão no mesmo convívio</div>
-        <div>&bull; Usar  máscara durante todo o culto</div>
+        <div>&bull; Usar máscara durante todo o culto</div>
         <div>&bull; Higienizar com frequência as mãos</div>
         <div>&bull; Evitar aglomerações na entrada e saída do templo</div>
       </ng-template>
     </div>
   </div>
   <div class="right-content">
-    <worship-time-section *ngFor="let time of worshipTimes; let i = index"
-                          [decoration]="decorations[i]"
-                          [icon]=icons[i]
-                          [worshipTime]="time"
-    ></worship-time-section>
+    <worship-time-section *ngFor="let time of worshipTimes; let i = index" [worshipTime]="time"></worship-time-section>
   </div>
 </div>

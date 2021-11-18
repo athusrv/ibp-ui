@@ -9,6 +9,7 @@ import {
   ViewEncapsulation
 } from '@angular/core';
 import {WorshipTimeGroup} from "../../../../models/worship-time-group";
+import {IconDefinition} from "@fortawesome/fontawesome-svg-core";
 
 @Component({
   selector: 'worship-time-section',
@@ -24,12 +25,6 @@ export class WorshipTimeSectionComponent implements OnInit, AfterViewInit {
   @Input()
   worshipTime?: WorshipTimeGroup;
 
-  @Input()
-  icon: string = 'tuiIconHeartFilled'
-
-  @Input()
-  decoration?: { color: string, background: string, boxShadow: string };
-
   constructor(private renderer: Renderer2) {
   }
 
@@ -37,10 +32,10 @@ export class WorshipTimeSectionComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    if (this.decoration && this.iconElem) {
-      this.renderer.setStyle(this.iconElem.nativeElement, 'color', this.decoration.color)
-      this.renderer.setStyle(this.iconElem.nativeElement, 'background', this.decoration.background)
-      this.renderer.setStyle(this.iconElem.nativeElement, 'box-shadow', this.decoration.boxShadow)
+    if (this.worshipTime?.decoration && this.iconElem) {
+      this.renderer.setStyle(this.iconElem.nativeElement, 'color', this.worshipTime?.decoration.color)
+      this.renderer.setStyle(this.iconElem.nativeElement, 'background', this.worshipTime?.decoration.background)
+      this.renderer.setStyle(this.iconElem.nativeElement, 'box-shadow', this.worshipTime?.decoration.boxShadow)
     }
   }
 

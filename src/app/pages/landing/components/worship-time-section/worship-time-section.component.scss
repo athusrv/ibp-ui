@@ -11,9 +11,22 @@
     width: fit-content;
 
     .icon {
-      svg {
-        width: auto;
-        height: 1.75rem
+      width: 3rem;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100%;
+
+      fa-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+          width: auto;
+          height: 1.75rem
+        }
       }
     }
 
