@@ -34,7 +34,7 @@
 
   .pgm-content-container {
     display: grid;
-    grid-template-columns: 35% 30% 35%;
+    grid-template-columns: 37.5% 25% 37.5%;
     flex-flow: row;
     align-items: center;
 
@@ -48,24 +48,22 @@
 
     .logo {
       position: relative;
-      align-items: flex-start;
+      align-items: center;
     }
 
     .content {
       padding-top: 4rem;
-      line-height: 1.2;
-      text-align: justify;
       align-items: flex-start;
+      line-height: 1.3;
 
       .main {
         font-weight: 600;
-        font-size: 1.25rem;
+        font-size: 1.2rem;
       }
 
       .complement {
         margin-top: 1rem;
-        font-size: 1rem;
-        line-height: 1;
+        font-size: .95rem;
       }
 
       button {
