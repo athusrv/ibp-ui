@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {WorshipTimeGroup} from "../../../../models/worship-time-group";
-import {faBible, faPray, faVirus} from "@fortawesome/free-solid-svg-icons";
+import {faBible, faExclamationTriangle, faPray} from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'worship-times',
@@ -9,7 +9,8 @@ import {faBible, faPray, faVirus} from "@fortawesome/free-solid-svg-icons";
 })
 export class WorshipTimesComponent implements OnInit {
 
-  faVirus = faVirus;
+  faExclamation = faExclamationTriangle;
+
   worshipTimeGroups: WorshipTimeGroup[] = [
     {
       title: 'Cultos Dominicais',

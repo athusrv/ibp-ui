@@ -1,0 +1,75 @@
+.contribute-wrapper {
+  padding: 3rem 6rem;
+  color: white;
+  background: linear-gradient(90deg, #152331 0%, #000000 100%);
+  position: relative;
+
+  .ellipsis-1 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    right: -1rem;
+    top: 5rem;
+
+    background: var(--accent-green);
+    filter: blur(180px);
+  }
+
+  .ellipsis-2 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    right: 18%;
+    top: -1rem;
+    background: var(--tui-primary);
+    filter: blur(180px);
+  }
+
+  &-container {
+    display: flex;
+    flex-flow: row;
+
+    div {
+      display: flex;
+      flex-flow: column;
+      align-items: flex-start;
+      padding: .5rem 0;
+
+      p {
+        font-size: 1.125rem;
+      }
+
+      p.top-heaer {
+        font-weight: bold;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        font-weight: bold;
+        margin: .5rem 0 0 0;
+        font-size: 2.25rem;
+      }
+
+      p.bottom-content {
+        padding-top: 1rem;
+        color: #E5E5E5;
+      }
+
+      button {
+        margin-top: 1.5rem;
+      }
+    }
+
+    div:first-child {
+      width: 30%;
+    }
+
+    div:last-child {
+      flex: 1 1 auto;
+      align-items: flex-end;
+    }
+  }
+}

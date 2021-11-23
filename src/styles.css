@@ -24,6 +24,10 @@ fa-icon {
   justify-content: center;
 }
 
+p, h1 {
+  line-height: 1;
+}
+
 :root {
   --tui-font-text: Sora, sans-serif !important;
   --primary-text-color: #000;
@@ -31,5 +35,6 @@ fa-icon {
   --accent-text-color: #fff;
   --tui-primary: #326AFF !important;
   --tui-primary-hover: #4e7dfa !important;
-  --accent-green: #8AB675
+  --accent-green: #8AB675;
+  --accent-orange: #FF7D04;
 }
