@@ -1,4 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {faAppStore, faFacebookSquare, faGooglePlay, faInstagram, faYoutube} from '@fortawesome/free-brands-svg-icons'
+import {faMobileAlt} from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'app-social-media-buttons',
@@ -10,6 +12,13 @@ export class SocialMediaButtonsComponent implements OnInit {
   direction: 'horizontal' | 'vertical' = 'vertical';
   @Input()
   animatable: boolean = true
+
+  icons = [
+    faYoutube,
+    faInstagram,
+    faFacebookSquare,
+    faMobileAlt,
+  ]
 
   constructor() {
   }

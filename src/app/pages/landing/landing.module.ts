@@ -6,6 +6,7 @@ import {HomeModule} from "./components/home/home.module";
 import {AboutModule} from "./components/about/about.module";
 import {FooterModule} from "./components/footer/footer.module";
 import {WorshipTimesModule} from "./components/worship-times/worship-times.module";
+import {PgmModule} from "./components/pgm/pgm.module";
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import {WorshipTimesModule} from "./components/worship-times/worship-times.modul
     HomeModule,
     AboutModule,
     FooterModule,
-    WorshipTimesModule
+    WorshipTimesModule,
+    PgmModule
   ]
 })
 export class LandingModule {

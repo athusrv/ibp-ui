@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {WorshipTimeGroup} from "../../../../models/worship-time-group";
-import {faBible, faPray} from "@fortawesome/free-solid-svg-icons";
+import {faBible, faPray, faVirus} from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'worship-times',
@@ -9,8 +9,8 @@ import {faBible, faPray} from "@fortawesome/free-solid-svg-icons";
 })
 export class WorshipTimesComponent implements OnInit {
 
-  icons: string[] = ['bible', '../../../../assets/icons/pray-solid.svg']
-  worshipTimes: WorshipTimeGroup[] = [
+  faVirus = faVirus;
+  worshipTimeGroups: WorshipTimeGroup[] = [
     {
       title: 'Cultos Dominicais',
       subtitle: 'Todos os domingos',
@@ -18,7 +18,7 @@ export class WorshipTimesComponent implements OnInit {
       decoration: {
         color: '#7D39FF',
         background: '#CEB5FF',
-        boxShadow: '0px 36px 80px rgba(121, 80, 200, 0.07), 0px 23.3333px 46.8519px rgba(121, 80, 200, 0.0531481), 0px 13.8667px 25.4815px rgba(121, 80, 200, 0.0425185), 0px 7.2px 13px rgba(121, 80, 200, 0.035), 0px 2.93333px 6.51852px rgba(121, 80, 200, 0.0274815), 0px 0.666667px 3.14815px rgba(121, 80, 200, 0.0168519)'
+        boxShadow: '0px 100px 80px rgba(125, 57, 255, 0.1), 0px 64.8148px 46.8519px rgba(125, 57, 255, 0.0759259), 0px 38.5185px 25.4815px rgba(125, 57, 255, 0.0607407), 0px 20px 13px rgba(125, 57, 255, 0.05), 0px 8.14815px 6.51852px rgba(125, 57, 255, 0.0392593), 0px 1.85185px 3.14815px rgba(125, 57, 255, 0.0240741)'
       },
       periods: [
         {
@@ -38,7 +38,7 @@ export class WorshipTimesComponent implements OnInit {
       decoration: {
         color: '#EC2950',
         background: '#F8B4C2',
-        boxShadow: '0px 16px 80px rgba(236, 41, 80, 0.07), 0px 10.3704px 46.8519px rgba(236, 41, 80, 0.0531481), 0px 6.16296px 25.4815px rgba(236, 41, 80, 0.0425185), 0px 3.2px 13px rgba(236, 41, 80, 0.035), 0px 1.3037px 6.51852px rgba(236, 41, 80, 0.0274815), 0px 0.296296px 3.14815px rgba(236, 41, 80, 0.0168519'
+        boxShadow: '0px 100px 80px rgba(236, 41, 80, 0.1), 0px 64.8148px 46.8519px rgba(236, 41, 80, 0.0759259), 0px 38.5185px 25.4815px rgba(236, 41, 80, 0.0607407), 0px 20px 13px rgba(236, 41, 80, 0.05), 0px 8.14815px 6.51852px rgba(236, 41, 80, 0.0392593), 0px 1.85185px 3.14815px rgba(236, 41, 80, 0.0240741)'
       },
       periods: [
         {

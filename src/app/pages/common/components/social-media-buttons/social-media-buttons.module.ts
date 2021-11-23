@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SocialMediaButtonsComponent } from './social-media-buttons.component';
+import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 
 
 
@@ -12,7 +13,8 @@ import { SocialMediaButtonsComponent } from './social-media-buttons.component';
         SocialMediaButtonsComponent
     ],
     imports: [
-        CommonModule
+        CommonModule,
+        FontAwesomeModule
     ]
 })
 export class SocialMediaButtonsModule { }

@@ -18,6 +18,12 @@ html, body {
   font-family: Sora, sans-serif;
 }
 
+fa-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 :root {
   --tui-font-text: Sora, sans-serif !important;
   --primary-text-color: #000;
@@ -25,4 +31,5 @@ html, body {
   --accent-text-color: #fff;
   --tui-primary: #326AFF !important;
   --tui-primary-hover: #4e7dfa !important;
+  --accent-green: #8AB675
 }

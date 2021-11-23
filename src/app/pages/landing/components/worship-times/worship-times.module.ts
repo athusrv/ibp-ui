@@ -3,7 +3,8 @@ import { CommonModule } from '@angular/common';
 import { WorshipTimesComponent } from './worship-times.component';
 import {TuiButtonModule, TuiHintModule, TuiSvgModule} from "@taiga-ui/core";
 import {TuiMarkerIconModule} from "@taiga-ui/kit";
-import {WorshipTimeSectionModule} from "../worship-time-section/worship-time-section.module";
+import {WorshipTimeGroupModule} from "../worship-time-section/worship-time-group.module";
+import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 
 
 
@@ -14,13 +15,14 @@ import {WorshipTimeSectionModule} from "../worship-time-section/worship-time-sec
     exports: [
         WorshipTimesComponent
     ],
-    imports: [
-        CommonModule,
-        TuiButtonModule,
-        TuiSvgModule,
-        TuiHintModule,
-        TuiMarkerIconModule,
-        WorshipTimeSectionModule
-    ]
+  imports: [
+    CommonModule,
+    TuiButtonModule,
+    TuiSvgModule,
+    TuiHintModule,
+    TuiMarkerIconModule,
+    WorshipTimeGroupModule,
+    FontAwesomeModule
+  ]
 })
 export class WorshipTimesModule { }

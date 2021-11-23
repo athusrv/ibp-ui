@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WorshipTimeSectionComponent } from './worship-time-section.component';
+import { PgmComponent } from './pgm.component';
 
-describe('WorshipTimeSectionComponent', () => {
-  let component: WorshipTimeSectionComponent;
-  let fixture: ComponentFixture<WorshipTimeSectionComponent>;
+describe('PgmComponent', () => {
+  let component: PgmComponent;
+  let fixture: ComponentFixture<PgmComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ WorshipTimeSectionComponent ]
+      declarations: [ PgmComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(WorshipTimeSectionComponent);
+    fixture = TestBed.createComponent(PgmComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
