@@ -39,11 +39,13 @@
         gap: .5rem;
 
         .icon {
-          color: var(--accent-green);
+          color: var(--accent-green)
         }
 
         p {
-          font-weight: 600;
+          //font-weight: 600;
+          color: var(--seconday-text-color);
+          font-weight: 300;
           font-size: 1rem;
         }
       }
