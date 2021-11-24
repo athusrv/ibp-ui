@@ -8,6 +8,8 @@
       <p class="bottom-content">Honre o Senhor com generosidade e seja um agente de transformação</p>
       <button tuiButton>Contribuir</button>
     </div>
-    <div></div>
+    <div class="social-front-cards">
+      <social-front-card *ngFor="let socialFront of socialFronts" [data]="socialFront"></social-front-card>
+    </div>
   </div>
 </div>

@@ -19,7 +19,7 @@ export class WorshipTimesComponent implements OnInit {
       decoration: {
         color: '#7D39FF',
         background: '#CEB5FF',
-        boxShadow: '0px 100px 80px rgba(125, 57, 255, 0.1), 0px 64.8148px 46.8519px rgba(125, 57, 255, 0.0759259), 0px 38.5185px 25.4815px rgba(125, 57, 255, 0.0607407), 0px 20px 13px rgba(125, 57, 255, 0.05), 0px 8.14815px 6.51852px rgba(125, 57, 255, 0.0392593), 0px 1.85185px 3.14815px rgba(125, 57, 255, 0.0240741)'
+        boxShadow: '0px 16px 80px rgba(125, 57, 255, 0.1), 0px 10.3704px 46.8519px rgba(125, 57, 255, 0.0759259), 0px 6.16296px 25.4815px rgba(125, 57, 255, 0.0607407), 0px 3.2px 13px rgba(125, 57, 255, 0.05), 0px 1.3037px 6.51852px rgba(125, 57, 255, 0.0392593), 0px 0.296296px 3.14815px rgba(125, 57, 255, 0.0240741)'
       },
       periods: [
         {
@@ -39,7 +39,7 @@ export class WorshipTimesComponent implements OnInit {
       decoration: {
         color: '#EC2950',
         background: '#F8B4C2',
-        boxShadow: '0px 100px 80px rgba(236, 41, 80, 0.1), 0px 64.8148px 46.8519px rgba(236, 41, 80, 0.0759259), 0px 38.5185px 25.4815px rgba(236, 41, 80, 0.0607407), 0px 20px 13px rgba(236, 41, 80, 0.05), 0px 8.14815px 6.51852px rgba(236, 41, 80, 0.0392593), 0px 1.85185px 3.14815px rgba(236, 41, 80, 0.0240741)'
+        boxShadow: '0px 16px 80px rgba(236, 41, 80, 0.1), 0px 10.3704px 46.8519px rgba(236, 41, 80, 0.0759259), 0px 6.16296px 25.4815px rgba(236, 41, 80, 0.0607407), 0px 3.2px 13px rgba(236, 41, 80, 0.05), 0px 1.3037px 6.51852px rgba(236, 41, 80, 0.0392593), 0px 0.296296px 3.14815px rgba(236, 41, 80, 0.0240741)'
       },
       periods: [
         {
