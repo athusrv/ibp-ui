@@ -1,0 +1,31 @@
+.newsletter-wrapper {
+  padding: 5rem 6rem 3.5rem;
+  background: var(--tui-primary);
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  color: white;
+
+  div:first-child {
+    display: flex;
+    flex-flow: column;
+    gap: 1.5rem;
+    max-width: 30rem;
+
+    h1 {
+      font-weight: bold;
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  div:last-child {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1 1 auto;
+  }
+}
